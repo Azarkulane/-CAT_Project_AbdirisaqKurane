@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e595aa382b.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logob.jpeg" class="logo">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Wep/App Developer</p>
+            <h1>Hi, I'm <span>Azar Kulane</span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutbcg.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A passionate software developer and cybersecurity enthusiast, dedicated to crafting innovative solutions and ensuring digital safety in a rapidly evolving tech landscape.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Kali Linux</span><br>Nmap/Wireshark/Sql-injection</li>
+                        <li><span>Web Development</span><br>Web Development / Wordpress Web Development</li>
+                        <li><span>App Development</span><br>Building Android App</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Graphic Design</li>
+                        <li><span>1/2023</span><br>Software Development Certificate from Modcom Institution Technology.</li>
+                        <li><span>8/2023</span><br>cybersecurity Certificate from Google Coursera.</li>
+                        <li><span>9/2023-9/2026</span><br>Information Security & Forensics from Kca University.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services Offered</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Transforming ideas into visually appealing and user-friendly websites that leave a lasting impression.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-user-secret"></i>
+                <h2>Kali Linux Expertise</h2>
+                <p>Utilizing Kali Linux tools to enhance cybersecurity measures, ensuring online safety and protection against digital threats.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Creating intuitive and elegant mobile applications with seamless user interfaces and exceptional user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/app.png">
+                <div class="layer">
+                    <h3>Short Notes</h3>
+                    <p>The app can provide a search function, allowing students to quickly find specific notes or topics they need to review</p>
+                    <a href="images/Modcomproject.pptx"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/linux.jpeg">
+                <div class="layer">
+                    <h3>kali Linux Tutorials</h3>
+                    <a href="https://www.youtube.com/@CyberInsight61"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/web.png">
+                <div class="layer">
+                    <h3>Online Shopping Website</h3>
+                    <a href="https://alhasantech.com/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<h1 class="azar">My Skills</h1>
+<section class="container2">
+<div class="skills">
+    <div class="skill">
+        <h1 class="heading2">Technical skills</h1>
+      <span class="skill-name" ></span><i id="html" class='bx bxl-html5'></i>
+      <div class="progress-bar html"></div>
+      <span class="percentage">90%</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name"></span><i id="css" class='bx bxl-css3'></i>
+      <div class="progress-bar css"></div>
+      <span class="percentage">85%</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name"></span><i id="javascript" class='bx bxl-javascript'></i>
+      <div class="progress-bar javascript"></div>
+      <span class="percentage">66%</span>
+    </div>
+    <div class="skill">
+        <span class="skill-name"></span><i id="python" class='bx bxl-python'></i>
+        <div class="progress-bar python"></div>
+        <span class="percentage">76%</span>
+      </div>
+  </div>
+
+  <!-- Extra Prof -->
+  <div class="profs">
+    <h1 class="heading2">Professional skills</h1>
+    <div class="prof">
+      <span class="prof-name">Communication</span>
+      <div class="progress-circle Communication">
+        <svg>
+          <circle class="progress-bars" cx="25" cy="25" r="20"></circle>
+          <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage-text">55%</text>
+        </svg>
+      </div>
+    </div>
+    <div class="prof">
+        <span class="prof-name">Time Management</span>
+        <div class="progress-circle Communication">
+          <svg>
+            <circle class="progress-bars" cx="25" cy="25" r="20"></circle>
+            <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage-text">55%</text>
+          </svg>
+        </div>
+      </div>
+    <div class="prof">
+      <span class="prof-name">Problem-Solving</span>
+      <div class="progress-circle Problem-Solving">
+        <svg>
+          <circle class="progress-bars" cx="25" cy="25" r="20"></circle>
+          <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage-text">88%</text>
+        </svg>
+      </div>
+    </div>
+    <div class="prof">
+        <span class="prof-name">Teamwork</span>
+        <div class="progress-circle Teamwork">
+          <svg>
+            <circle class="progress-bars" cx="25" cy="25" r="20"></circle>
+            <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage-text">70%</text>
+          </svg>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> azzarkulane@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+254-727-331-901</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/updyrisaq.kulane.12382?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/azarkulane?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<hr>
+      <div class="bottom-footer">
+        <div class="container">
+            <p>Copyright © Azarkulane. Made by <i class="fas fa-heart"></i> <a href="https://www.youtube.com/@CyberInsight61">HackerMindset</a></p>
+        </div>
+      </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
